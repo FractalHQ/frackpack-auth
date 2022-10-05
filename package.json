@@ -28,7 +28,6 @@
 	"devDependencies": {
 		"@changesets/cli": "^2.25.0",
 		"@sveltejs/adapter-auto": "1.0.0-next.80",
-		"@sveltejs/adapter-vercel": "1.0.0-next.77",
 		"@sveltejs/kit": "1.0.0-next.510",
 		"@sveltejs/package": "1.0.0-next.5",
 		"@svitejs/changesets-changelog-github-compact": "^0.1.1",
