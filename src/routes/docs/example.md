@@ -5,7 +5,7 @@ A starter template for internal, private npm packages + documentation.
 ## Running locally
 
 ```bash
-npx degit fractalhq/frackpack-auth my-package
+npx degit fractalhq/fracpack-auth my-package
 
 cd my-package
 

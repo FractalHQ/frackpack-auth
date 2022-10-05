@@ -5,11 +5,18 @@
 		"*.svg": "html" //* Prettier
 	},
 
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[json]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
 
-	"editor.formatOnSave": true,
+	"[javascript, typescript]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
 
 	"[svelte]": {
+		"editor.formatOnSave": true,
 		"editor.defaultFormatter": "svelte.svelte-vscode"
 	},
 
@@ -92,6 +99,15 @@
 		{
 			"tag": "todo",
 			"color": "#FF8C00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "-",
+			"color": "#aabbaa",
 			"strikethrough": false,
 			"underline": false,
 			"backgroundColor": "transparent",
