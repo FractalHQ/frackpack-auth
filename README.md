@@ -2,6 +2,10 @@
 
 A starter template for internal, private npm packages + documentation.
 
+> see [fracpack-auth](https://github.com/fractalhq/fracpack) for public packages and a non password-protected demo/docs site.
+
+<br>
+
 ## Running locally
 
 ```bash
@@ -16,17 +20,6 @@ pnpm run dev
 
 navigate to http://localhost:3333
 
-<details>
-<summary>Don't have `pnpm` installed?</summary>
-
-You should! You can install it easily as a drop-in npm replacement with this one liner from <a href='https://pnpm.io/installation'>the docs</a>:
-
-```bash
-    curl -fsSL https://get.pnpm.io/install.sh | sh -
-```
-
-</details>
-
 <br>
 
 ## Setup
@@ -35,7 +28,10 @@ You should! You can install it easily as a drop-in npm replacement with this one
 - Add the same login credentials to your servers environment variables (in my case, to Vercel).
 - Add your `npm` token to your Github environment variables.
 - Update the `repo` field in `.changeset/config.json`
-- Change 'package.json.private' to `true`
+
+<br>
+
+# Usage
 
 `pnpm build` - Build the demo/docs site.
 
@@ -45,7 +41,9 @@ You should! You can install it easily as a drop-in npm replacement with this one
 
 `npx changset` - [Publish](#publishing) the build.
 
-Anything exported from [`src/package/index.ts`]() will be included in the `npm` package (with type declaration files automatically generated). Markdown can be used anywhere (see [`src/routes/docs/+page.md`]()). I like to use the home page ([`src/routes/+page.svelte`]()) for demos. See [`svelte.config.js`]() and [`vite.config.js`]() for further configuration.
+Anything exported from [src/package/index.ts]() will be included in the `npm` package (with type declaration files automatically generated). Markdown can be used anywhere *(see [src/routes/docs/+page.md]())*. I like to use the home page ([src/routes/+page.svelte]()) for demos. See [svelte.config.js]() and [vite.config.js]() for further configuration.
+
+<br>
 
 ## Publishing
 
