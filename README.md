@@ -14,7 +14,7 @@ pnpm install
 pnpm run dev
 ```
 
-navigate to http://localhost:3000
+navigate to http://localhost:3333
 
 <details>
 <summary>Don't have `pnpm` installed?</summary>
@@ -37,9 +37,15 @@ You should! You can install it easily as a drop-in npm replacement with this one
 - Update the `repo` field in `.changeset/config.json`
 - Change 'package.json.private' to `true`
 
-## Usage
+`pnpm build` - Build the demo/docs site.
 
-Anything exported from `src/package/index.ts` will be included in the `npm` package with type declaration files automatically generated. Markdown can be used anywhere (see `src/routes/docs/+page.md)`. I like to use the home page (`src/routes/+page.svelte`) for demos. See `svelte.config.js` to configure your own setup.
+`pnpm package` - Build the package into `dist`.
+
+`pnpm package-watch` - Watch for changes in the package, and rebuild it automatically.
+
+`npx changset` - [Publish](#publishing) the build.
+
+Anything exported from [`src/package/index.ts`]() will be included in the `npm` package (with type declaration files automatically generated). Markdown can be used anywhere (see [`src/routes/docs/+page.md`]()). I like to use the home page ([`src/routes/+page.svelte`]()) for demos. See [`svelte.config.js`]() and [`vite.config.js`]() for further configuration.
 
 ## Publishing
 
